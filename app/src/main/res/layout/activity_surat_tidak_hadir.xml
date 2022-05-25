@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.surat.tidak_hadir.SuratTidakHadirActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Surat Tidak Hadir"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="@dimen/margin_activity"
+            android:layout_marginStart="@dimen/margin_activity"
+            android:layout_marginEnd="@dimen/margin_activity"
+            android:fontFamily="@font/capriola"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Bulan Ini"
+            tools:ignore="HardcodedText,RtlCompat"
+            android:layout_marginStart="@dimen/margin_activity"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/capriola"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_surat"
+            android:layout_marginTop="@dimen/margin_low"
+            android:layout_marginBottom="@dimen/margin_low"
+            />
+
+        <TextView
+            android:id="@+id/tv_notif_kosong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Surat Izin Masih Kosong !"
+            tools:ignore="HardcodedText"
+            android:visibility="gone"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:layout_marginBottom="@dimen/margin_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/floatAdd"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

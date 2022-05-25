@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.absensi.ui.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:src="@drawable/ic_undraw_unboxing_pbmf"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:text="Form Ganti Perangkat"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/capriola" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:background="@drawable/bg_edt"
+        android:hint="No Pegawai"
+        android:paddingLeft="@dimen/margin_activity"
+        android:textColorHint="@color/text_colorlogin"
+        android:inputType="textEmailAddress"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+        android:id="@+id/edt_nopegawai"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_activity_small"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:background="@drawable/bg_edt"
+        android:textColor="@color/white"
+        android:hint="@string/password"
+        android:paddingLeft="@dimen/margin_activity"
+        android:textColorHint="@color/text_colorlogin"
+        tools:ignore="Autofill,RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edt_confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginTop="@dimen/margin_activity_small"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:background="@drawable/bg_edt"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/margin_activity"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_colorlogin"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        >
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/capriola"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            tools:ignore="RelativeOverlap,RtlCompat,UnusedAttribute" />
+
+        <ImageButton
+            android:id="@+id/btn_submit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            tools:ignore="ContentDescription,HardcodedText,RelativeOverlap,RtlCompat,RtlHardcoded"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btnlogin"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Anda ingin Login?"-->
+<!--        android:textColor="@color/text_colorlogin"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginTop="@dimen/margin_activity"-->
+<!--        tools:ignore="HardcodedText" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Klik untuk Login"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="@dimen/margin_activity_small"-->
+<!--        />-->
+
+</LinearLayout>

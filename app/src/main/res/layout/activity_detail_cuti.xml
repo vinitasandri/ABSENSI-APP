@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.surat.tidak_hadir.SuratTidakHadirActivity"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:elevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/toolbar" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_activity"
+                android:background="@drawable/container"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:fontFamily="@font/capriola"
+                    android:gravity="center_horizontal"
+                    android:text="Detail Surat Cuti"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_namapegawai"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_idpegawai"
+                    android:drawablePadding="26dp"
+                    android:enabled="false"
+                    android:hint="Nama Pegawai"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    app:elevation="8dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Mulai"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginTop="@dimen/margin_low"
+                    />
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_calendar_today_24"
+                    android:drawablePadding="26dp"
+                    android:hint="Tanggal Mulai Cuti"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    app:elevation="8dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Selesai"
+                    tools:ignore="HardcodedText,RtlCompat"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_low"
+                    />
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_calendar_today_24"
+                    android:drawablePadding="26dp"
+                    android:hint="Tanggal Akhir Cuti"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    app:elevation="8dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_low"
+                    android:text="Keterangan"
+                    tools:ignore="RtlCompat" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:gravity="top"
+                    android:hint="Keterangan Cuti"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:paddingLeft="@dimen/margin_low"
+                    android:paddingTop="@dimen/margin_low"
+                    android:paddingRight="@dimen/margin_low"
+                    tools:ignore="HardcodedText" />
+
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_outline_danger"
+                    android:text="Batalakan Pengajuan"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

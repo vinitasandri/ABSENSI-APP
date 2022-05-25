@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/selector_tab_home"
+        app:showAsAction="ifRoom"
+        android:title="@string/home"
+        />
+
+    <item
+        android:id="@+id/nav_presensi"
+        android:title="@string/presensi"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/selector_tab_presensi"
+        />
+
+    <item
+        android:title="@string/abensi"
+        android:id="@+id/nav_absensi"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_qr_code_1"
+
+    />
+
+    <item
+        android:title="@string/laporan"
+        android:id="@+id/nav_laporan"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/selector_tab_report"
+        />
+
+    <item
+        android:title="@string/account"
+        android:id="@+id/nav_profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/selector_tab_profile"
+        />
+
+
+</menu>

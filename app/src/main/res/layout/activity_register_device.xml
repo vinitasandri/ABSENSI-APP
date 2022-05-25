@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.register.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/container_register"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_undraw_develop_app_kvt2"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/margin_activity"
+            android:layout_marginEnd="@dimen/margin_activity"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="RtlHardcoded"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_nopegawai"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="No Pegawai"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    />
+
+                <Button
+                    android:id="@+id/btn_cek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_btnsubmit"
+                    android:text="Cek Data"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="@string/nik"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="36dp"
+                    android:text="Nomor KTP kurang dari 16 digit"
+                    tools:ignore="HardcodedText"
+                    android:textColor="@color/red"
+                    android:id="@+id/info_ktp"
+                    android:visibility="gone"
+                    />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="@string/full_name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_input_alasan"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:drawablePadding="@dimen/margin_activity"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    app:elevation="8dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_activity"
+                    android:layout_marginTop="@dimen/margin_activity"
+                    android:layout_marginEnd="@dimen/margin_activity"
+                    android:background="@drawable/bg_btnsubmit"
+                    android:text="@string/regis"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/cardLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="50dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already a member ?"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/member"
+                        android:text="@string/login"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>
